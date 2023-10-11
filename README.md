@@ -6,6 +6,7 @@
 ![license](https://img.shields.io/github/license/kartano/ruffian)
 ![contributors](https://img.shields.io/github/contributors/kartano/ruffian)
 ![branch](https://img.shields.io/github/last-commit/kartano/ruffian/master)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/kartano/ruffian)
 ![issues](https://img.shields.io/github/issues/kartano/ruffian)
 ![tag](https://img.shields.io/github/v/tag/kartano/ruffian)
 
