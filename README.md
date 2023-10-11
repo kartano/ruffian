@@ -1,3 +1,17 @@
+![Static Badge](https://img.shields.io/badge/PHP-8.2-blue)
+![Static Badge](https://img.shields.io/badge/MySQL-8.1.0-blue)
+![Static Badge](https://img.shields.io/badge/Apache-2.4.57-blue)
+![Static Badge](https://img.shields.io/badge/Linux-debian_11_slim-blue)
+
+![license](https://img.shields.io/github/license/kartano/ruffian)
+![contributors](https://img.shields.io/github/contributors/kartano/ruffian)
+![branch](https://img.shields.io/github/last-commit/kartano/ruffian/master)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/kartano/ruffian)
+![issues](https://img.shields.io/github/issues/kartano/ruffian)
+![tag](https://img.shields.io/github/v/tag/kartano/ruffian)
+
+![Discord](https://img.shields.io/discord/1156682386340319332)
+
 # [Ruffian](https://en.wikipedia.org/wiki/Captain_Haddock)
 
 A RESTful API to simply return random Captain Haddock insults.
