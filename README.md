@@ -10,6 +10,8 @@
 ![issues](https://img.shields.io/github/issues/kartano/ruffian)
 ![tag](https://img.shields.io/github/v/tag/kartano/ruffian)
 
+![Discord](https://img.shields.io/discord/1156682386340319332)
+
 # [Ruffian](https://en.wikipedia.org/wiki/Captain_Haddock)
 
 A RESTful API to simply return random Captain Haddock insults.
