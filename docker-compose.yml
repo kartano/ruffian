@@ -8,12 +8,7 @@ services:
     environment:
       APPLICATION_ENV: $APPLICATION_ENV
       DEVELOPER_ENV: $DEVELOPER_ENV
-      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
-      MYSQL_DATABASE: $MYSQL_DATABASE
-      MYSQL_USER: $MYSQL_USER
-      MYSQL_PASSWORD: $MYSQL_PASSWORD
-      MYSQL_HOST: $MYSQL_HOST
-      MYSQL_PORT: $MYSQL_PORT
+      DATABASE_URL: $DATABASE_URL
     volumes:
       - "./:/srv/www"
       - "./build/docker/apache.conf:/etc/apache2/conf-enabled/zz_dvusd_dev.conf"
