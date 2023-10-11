@@ -71,3 +71,5 @@ php bin/console doctrine:migrations:migrate
 ```
 
 ## Licensing
+
+This software is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
