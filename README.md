@@ -74,7 +74,25 @@ php bin/console doctrine:migrations:migrate
 
 Please add [issues and tickets](https://github.com/kartano/ruffian/issues) to the project's Github page.
 
-* TBD:  Add troubleshooting issues here.
+* Routes
+
+Check that your route is handled by Symfony:
+
+```bash
+cd /srv/www
+php bin/console debug:router
+# List of all routes appears
+php bin/console router:match /your/route/1
+# You'll get info about how this route is handled, or an error
+```
+
+Try clearing the Symfony cache:
+
+```bash
+cd /srv/www
+php bin/console cache:pool:list
+```
+
 
 ## Licensing
 
