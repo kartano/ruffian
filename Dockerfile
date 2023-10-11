@@ -43,7 +43,7 @@ RUN apt-get autoremove -y && apt-get clean y
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/*
 
 #  BASH as default script
-SHELL ["/bin/bash", "-ec"]
+RUN ln -sf /bin/bash /bin/sh
 
 COPY . /srv/www
 WORKDIR /srv/www
