@@ -9,6 +9,8 @@ RUN printf "date.timezone = America/Phoenix\n" >> /usr/local/etc/php/php.ini
 RUN sed -i.bak 's,^post_max_size =.*$,post_max_size = 512M,' /usr/local/etc/php/php.ini
 RUN sed -i.bak 's,^memory_limit =.*$,memory_limit = 512M,' /usr/local/etc/php/php.ini
 
+RUN a2enmod rewrite
+
 # Global utils
 RUN apt-get update && apt-get install iputils-ping git libzip-dev libonig-dev vim wget openssl unzip zip sudo -y
 
