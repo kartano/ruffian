@@ -70,6 +70,12 @@ cd /srv/www
 php bin/console doctrine:migrations:migrate
 ```
 
+## Troubleshooting
+
+Please add [issues and tickets](https://github.com/kartano/ruffian/issues) to the project's Github page.
+
+* TBD:  Add troubleshooting issues here.
+
 ## Licensing
 
 This software is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
