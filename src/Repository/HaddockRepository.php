@@ -21,6 +21,14 @@ class HaddockRepository extends ServiceEntityRepository
         parent::__construct($registry, Haddock::class);
     }
 
+    /*
+    When it comes time to grab random counts of insults:
+
+    SELECT * FROM table_name
+    ORDER BY RAND()
+    LIMIT 1;
+     */
+
 //    /**
 //     * @return Haddock[] Returns an array of Haddock objects
 //     */
