@@ -2,6 +2,7 @@
 ![Static Badge](https://img.shields.io/badge/MySQL-8.1.0-blue)
 ![Static Badge](https://img.shields.io/badge/Apache-2.4.57-blue)
 ![Static Badge](https://img.shields.io/badge/Linux-debian_11_slim-blue)
+![Static Badge](https://img.shields.io/badge/Symfony-6.3-blue)
 
 ![license](https://img.shields.io/github/license/kartano/ruffian)
 ![contributors](https://img.shields.io/github/contributors/kartano/ruffian)
@@ -84,6 +85,7 @@ cd /srv/www
 php bin/console doctrine:migrations:migrate
 ```
 
+3. ANY CHANGES you make to entities, attributes etc MUST be handled through Symfony migrations.  See the [Symfony Migration article](https://symfony.com/doc/current/doctrine.html#migrations-adding-more-fields).
 ## Troubleshooting
 
 Please add [issues and tickets](https://github.com/kartano/ruffian/issues) to the project's Github page.
