@@ -183,4 +183,9 @@ final class Version20231011175318 extends AbstractMigration
             $this->addSql("DELETE FROM haddock WHERE insult = '$insult';");
         }
     }
+
+    public function isTransactional(): bool
+    {
+        return false;
+    }
 }

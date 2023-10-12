@@ -13,7 +13,7 @@ class Haddock
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, unique: true, nullable: false)]
     private ?string $insult = null;
 
     #[ORM\Column]
