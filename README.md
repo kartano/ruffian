@@ -66,14 +66,14 @@ DATABASE_URL="mysql://WHATEVER MYSQL_USER IS:WHATEVER MYSQL_PASSWORD IS@ruffian-
 
 1. Use Docker Composer to build and then run the container.
 
-```
+```bash
 docker-compose --env-file $Env:USERPROFILE\env.txt build --pull
 docker-compose --env-file $Env:USERPROFILE\env.txt up -d 
 ```
 
 2. Open Docker or an SSH terminal and get dependances installed:
 
-```
+```bash
 cd /srv/www
 composer update
 ```
@@ -85,14 +85,14 @@ composer update
 
 1. Create the database if it doesn't exist:
 
-```
+```bash
 cd /srv/www
 php bin/console doctrine:database:create
 ```
 
 2. Run migrations to build the database:
 
-```
+```bash
 cd /srv/www
 php bin/console doctrine:migrations:migrate
 ```
@@ -121,7 +121,6 @@ Try clearing the Symfony cache:
 cd /srv/www
 php bin/console cache:pool:list
 ```
-
 
 ## Licensing
 
