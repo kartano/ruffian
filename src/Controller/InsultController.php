@@ -2,20 +2,18 @@
 
 namespace App\Controller;
 
-use JetBrains\PhpStorm\NoReturn;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpKernel\Attribute\Cache;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+#[Route('/insult')]
 class InsultController extends AbstractController
 {
-    #[NoReturn] #[Route('/api/list', methods: ['GET', 'HEAD'])]
+    #[Route('/list', name: 'insult_list', methods: ['GET'])]
+    #[Cache(smaxage: 10)]
     public function list(): Response
     {
-        echo "works";
-        die();
-
-        /*
         $result = [
             'insult' => [
                 'Ruffian!',
@@ -23,6 +21,5 @@ class InsultController extends AbstractController
         ];
 
         return new Response(json_encode($result));
-        */
     }
 }
