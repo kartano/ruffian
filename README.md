@@ -17,6 +17,18 @@
 
 A RESTful API to simply return random Captain Haddock insults.
 
+<!-- TOC -->
+* [Requirements](#requirements)
+    * [Must-haves](#must-haves)
+    * [Nice-to-haves](#nice-to-haves)
+* [Containers](#containers)
+    * [Create Environment File](#create-environment-file)
+    * [Building and Running](#building-and-running)
+    * [Database](#database)
+* [Troubleshooting](#troubleshooting)
+* [Licensing](#licensing)
+<!-- TOC -->
+
 ## Requirements
 
 ### Must-haves
@@ -86,6 +98,7 @@ php bin/console doctrine:migrations:migrate
 ```
 
 3. ANY CHANGES you make to entities, attributes etc MUST be handled through Symfony migrations.  See the [Symfony Migration article](https://symfony.com/doc/current/doctrine.html#migrations-adding-more-fields).
+
 ## Troubleshooting
 
 Please add [issues and tickets](https://github.com/kartano/ruffian/issues) to the project's Github page.
