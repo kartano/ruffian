@@ -21,6 +21,19 @@ class HaddockRepository extends ServiceEntityRepository
         parent::__construct($registry, Haddock::class);
     }
 
+    /**
+     * @param int $count
+     * @return Haddock[] Random Haddock insults
+     */
+    public function findRandomEntries(int $count): array
+    {
+        return $this->createQueryBuilder('h')
+            ->orderBy('RAND()')
+            ->setMaxResults($count)
+            ->getQuery()
+            ->getResult();
+    }
+
     /*
     When it comes time to grab random counts of insults:
 
