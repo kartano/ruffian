@@ -16,7 +16,7 @@ class Haddock
     #[ORM\Column(length: 255, unique: true, nullable: false)]
     private ?string $insult = null;
 
-    #[ORM\Column]
+    #[ORM\Column(nullable: false)]
     private ?int $used_count = null;
 
     public function getId(): ?int
