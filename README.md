@@ -71,7 +71,7 @@ docker-compose --env-file $Env:USERPROFILE\env.txt build --pull
 docker-compose --env-file $Env:USERPROFILE\env.txt up -d 
 ```
 
-2. Open Docker or an SSH terminal and get dependances installed:
+2. Open Docker or an SSH terminal and get dependencies installed:
 
 ```bash
 cd /srv/www
