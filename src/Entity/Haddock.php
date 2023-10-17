@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\HaddockRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
@@ -13,13 +14,13 @@ class Haddock
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column(type: Types::INTEGER)]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255, unique: true, nullable: false)]
+    #[ORM\Column(type: Types::TEXT, length: 255, unique: true, nullable: false)]
     private ?string $insult = null;
 
-    #[ORM\Column(nullable: false)]
+    #[ORM\Column(type: Types::INTEGER, nullable: false)]
     private ?int $used_count = null;
 
     public function getId(): ?int
