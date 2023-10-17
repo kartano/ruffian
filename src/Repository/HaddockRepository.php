@@ -27,6 +27,12 @@ class HaddockRepository extends ServiceEntityRepository
      */
     public function findRandomEntries(int $count): array
     {
+        if (0 > $count) {
+            $count = 1;
+        } elseif (10 <= $count) {
+            $count = 10;
+        }
+
         return $this->createQueryBuilder('h')
             ->orderBy('RAND()')
             ->setMaxResults($count)

@@ -4,8 +4,11 @@ namespace App\Entity;
 
 use App\Repository\HaddockRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 #[ORM\Entity(repositoryClass: HaddockRepository::class)]
+#[ORM\Table(name: 'haddock')]
+#[UniqueEntity(fields: ['insult'])]
 class Haddock
 {
     #[ORM\Id]
