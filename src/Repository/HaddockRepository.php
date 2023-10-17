@@ -22,7 +22,8 @@ class HaddockRepository extends ServiceEntityRepository
     }
 
     /**
-     * @param int $count
+     * Return a random list of Haddock insults.
+     * @param int $count Must be between 1 and 10.
      * @return Haddock[] Random Haddock insults
      */
     public function findRandomEntries(int $count): array
