@@ -20,9 +20,6 @@ class Haddock
     #[ORM\Column(type: Types::TEXT, length: 255, unique: true, nullable: false)]
     private ?string $insult = null;
 
-    #[ORM\Column(type: Types::INTEGER, nullable: false)]
-    private ?int $used_count = null;
-
     public function getId(): ?int
     {
         return $this->id;
@@ -36,18 +33,6 @@ class Haddock
     public function setInsult(string $insult): static
     {
         $this->insult = $insult;
-
-        return $this;
-    }
-
-    public function getUsedCount(): ?int
-    {
-        return $this->used_count;
-    }
-
-    public function setUsedCount(int $used_count): static
-    {
-        $this->used_count = $used_count;
 
         return $this;
     }

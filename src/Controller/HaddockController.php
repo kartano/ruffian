@@ -15,14 +15,13 @@ class HaddockController extends AbstractController
 {
     #[Route('/list/{count}', name: 'insult_list', methods: ['GET'])]
     #[Cache(smaxage: 10)]
-    public function list(EntityManagerInterface $entityManager, int $count): Response
+    public function list(HaddockRepository $repository, int $count): Response
     {
-        $repository = $entityManager->getRepository(Haddock::class);
         $haddock = $repository->findRandomEntries($count);
 
         $result = [
             'haddock' => [
-                $haddock->toArray()
+                $haddock,
             ],
         ];
 
