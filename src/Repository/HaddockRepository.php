@@ -27,7 +27,7 @@ class HaddockRepository extends ServiceEntityRepository
      */
     public function findRandomEntries(int $count): array
     {
-        if (0 > $count) {
+        if (0 >= $count) {
             $count = 1;
         } elseif (10 < $count) {
             $count = 10;
