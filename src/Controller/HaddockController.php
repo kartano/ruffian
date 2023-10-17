@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/haddock')]
 class HaddockController extends AbstractController
 {
-    #[Route('/list/{count}', name: 'insult_list', methods: ['GET'])]
+    #[Route('/list/{count}', name: 'insult_list', requirements: ['count' => '\d+'], methods: ['GET'])]
     #[Cache(smaxage: 10)]
     public function list(HaddockRepository $repository, int $count): Response
     {
