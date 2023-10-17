@@ -127,7 +127,6 @@ final class Version20231011175318 extends AbstractMigration
         'Bootlegger!',
         'Gogglers!',
         'Villain!',
-        'Aborigine!',
         'Bagpipers!',
         'Crab apples!',
         'Goosecaps!',
