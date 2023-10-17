@@ -29,7 +29,7 @@ class HaddockRepository extends ServiceEntityRepository
     {
         if (0 > $count) {
             $count = 1;
-        } elseif (10 <= $count) {
+        } elseif (10 < $count) {
             $count = 10;
         }
 
