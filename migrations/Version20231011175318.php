@@ -157,7 +157,7 @@ final class Version20231011175318 extends AbstractMigration
         'Nitwits!',
         'Polygraphs!',
         'Iconoclast!',
-        'Orangoutang!',
+        'Orangutan!',
         'Squawking popinjay!',
         'Prattling porpoise!',
         'Scoffing braggart!',
