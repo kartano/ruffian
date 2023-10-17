@@ -2,11 +2,8 @@
 
 namespace App\Controller;
 
-use App\Entity\Haddock;
 use App\Repository\HaddockRepository;
-use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpKernel\Attribute\Cache;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -14,7 +11,6 @@ use Symfony\Component\Routing\Annotation\Route;
 class HaddockController extends AbstractController
 {
     #[Route('/list/{count}', name: 'insult_list', requirements: ['count' => '\d+'], methods: ['GET'])]
-    #[Cache(smaxage: 10)]
     public function list(HaddockRepository $repository, int $count): Response
     {
         $haddock = $repository->findRandomEntries($count);
