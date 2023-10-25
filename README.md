@@ -103,7 +103,7 @@ php bin/console doctrine:migrations:migrate
 
 Please add [issues and tickets](https://github.com/kartano/ruffian/issues) to the project's Github page.
 
-* Routes
+### Routes
 
 Check that your route is handled by Symfony:
 
